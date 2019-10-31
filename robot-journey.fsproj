@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>robot_journey</RootNamespace>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Robots.fs" />
+    <Compile Include="StephImp.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+</Project>
