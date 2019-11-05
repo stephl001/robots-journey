@@ -1,30 +1,29 @@
-namespace Robots
+module Robots
 
-module Domain =
+type Direction =
+    | North
+    | East
+    | South
+    | West
 
-    type Direction =
-        | North
-        | East
-        | South
-        | West
+type Command =
+    | Right
+    | Left
+    | Forward
 
-    type Command =
-        | Right
-        | Left
-        | Forward
+type Coordinates =
+    { x: int
+      y: int }
 
-    type Coordinates =
-        { x: int
-          y: int }
+type RobotInfo =
+    { coordinates: Coordinates
+      facing: Direction }
 
-    type RobotInfo =
-        { coordinates: Coordinates
-          facing: Direction }
+type Journey =
+    { initial: RobotInfo
+      commands: Command list
+      final: RobotInfo }
 
-    type Journey =
-        { initial: RobotInfo
-          commands: Command list
-          final: RobotInfo }
-
-    //This is the definition of the function to create in your implementation
-    type IsValidJourneyDef = Journey -> bool
+//This is the definition of the function to create in your implementation
+let runCommands (state:RobotInfo) (commands:Command list) =
+    failwith "Please, implement this function..."
